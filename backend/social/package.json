@@ -6,8 +6,8 @@
 	"scripts": {
 		"start": "node app.js",
 		"migrate": "knex migrate:latest",
-		"makemigrate": "knex --knexfile=./database/knexfile.js migrate:make",
-		"makeseed": "knex --knexfile=./database/knexfile.js seed:make",
+		"makemigrate": "knex --knexfile=./database/knexfile.js migrate:make user-profile",
+		"makeseed": "knex --knexfile=./database/knexfile.js seed:make dummy_users",
 		"seed": "knex seed:run",
 		"lint": "eslint '**/*.js'"
 	},
@@ -20,7 +20,6 @@
 		"kafkajs": "^1.15.0",
 		"knex": "^0.95.6",
 		"node-rdkafka": "^2.12.0",
-		"objection": "^2.2.15",
 		"pg": "^8.6.0"
 	},
 	"devDependencies": {
